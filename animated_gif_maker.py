@@ -1,3 +1,4 @@
+#!/usr/bin/env python3
 """ creates an animated gif from a list of image files """
 import argparse
 from PIL import Image
@@ -6,6 +7,7 @@ parser = argparse.ArgumentParser(description='Create animated gifs')
 parser.add_argument(
     '--duration',
     default=100,
+    type=int,
     help='milliseconds to show each image'
 )
 parser.add_argument(
